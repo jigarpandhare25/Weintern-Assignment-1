@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Jigar Pandhare</title>
+    <meta name="description" content="Explore portfolio projects by Jigar Pandhare, including frontend and fullstack web applications.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Dev<span>Portfolio</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-right">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark/Light Mode">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        style="display: none;">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <button class="hamburger" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <header class="page-header">
+            <div class="container reveal">
+                <h1 class="page-title">Featured <span class="highlight">Projects</span></h1>
+                <p class="page-subtitle">A curated portfolio of interactive frontend and full-stack applications with real-world impact.</p>
+            </div>
+        </header>
+
+        <!-- Projects Grid & Filter -->
+        <section class="section">
+            <div class="container">
+                <!-- Interactive Filter Controls -->
+                <div class="filter-controls reveal">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="frontend">Frontend</button>
+                    <button class="filter-btn" data-filter="fullstack">Fullstack</button>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: NGO Website -->
+                    <article class="project-card reveal" data-category="frontend">
+                        <div class="project-img-wrapper">
+                            <img src="assets/images/ngo-website.png" alt="NGO Website screenshot">
+                        </div>
+                        <div class="project-info">
+                            <h2 class="project-title">NGO Website</h2>
+                            <p class="project-desc">
+                                A responsive non-profit web platform built to empower underprivileged orphan children with education, food, and shelter resources. Features donor engagement flows and mobile-first layouts.
+                            </p>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>Responsive</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://jigarpandhare25.github.io/NGO-Website/" target="_blank" rel="noopener noreferrer" class="btn btn-small btn-primary">
+                                    <span>Live Demo</span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                                </a>
+                                <a href="https://github.com/jigarpandhare25/NGO-Website/" target="_blank" rel="noopener noreferrer" class="btn btn-small btn-outline">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Task Management App -->
+                    <article class="project-card reveal" data-category="fullstack">
+                        <div class="project-img-wrapper">
+                            <img src="assets/images/task-manager.png" alt="Task Management App screenshot">
+                        </div>
+                        <div class="project-info">
+                            <h2 class="project-title">Task Management App</h2>
+                            <p class="project-desc">
+                                A comprehensive productivity application for managing tasks, tracking daily goals, and organizing workflows. Implements real-time state management, priority filters, and clean data modeling.
+                            </p>
+                            <div class="project-tech">
+                                <span>JavaScript</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                                <span>Express</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://jigarpandhare25.github.io/task_manager_updated/" target="_blank" rel="noopener noreferrer" class="btn btn-small btn-primary">
+                                    <span>Live Demo</span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                                </a>
+                                <a href="https://github.com/jigarpandhare25/task_manager_updated/" target="_blank" rel="noopener noreferrer" class="btn btn-small btn-outline">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: DonEATe -->
+                    <article class="project-card reveal" data-category="frontend">
+                        <div class="project-img-wrapper">
+                            <img src="assets/images/doneate.png" alt="DonEATe platform screenshot">
+                        </div>
+                        <div class="project-info">
+                            <h2 class="project-title">DonEATe</h2>
+                            <p class="project-desc">
+                                A modern food donation platform designed to reduce hunger and prevent food waste by connecting generous donors and local food distributors in an intuitive real-time interface.
+                            </p>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>JavaScript</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://jigarpandhare25.github.io/DonEATe/" target="_blank" rel="noopener noreferrer" class="btn btn-small btn-primary">
+                                    <span>Live Demo</span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                                </a>
+                                <a href="https://github.com/jigarpandhare25/DonEATe/" target="_blank" rel="noopener noreferrer" class="btn btn-small btn-outline">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section" style="background-color: var(--bg-secondary);">
+            <div class="container">
+                <div class="cta-banner reveal">
+                    <h2>Have a project in mind?</h2>
+                    <p>I am always looking for new challenges, collaborations, and engineering opportunities.</p>
+                    <a href="contact.html" class="btn btn-primary">Let's Connect</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/jigarpandhare25" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/jigar-pandhare-74bb83329/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+                <a href="https://www.instagram.com/_.jigarrr._25/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </a>
+            </div>
+            <p class="copyright">&copy; <span id="year"></span> Jigar Pandhare. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
